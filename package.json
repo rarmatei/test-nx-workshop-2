@@ -43,6 +43,7 @@
     "@nestjs/platform-express": "^7.0.0",
     "@nrwl/angular": "^10.3.3",
     "@nrwl/nx-cloud": "^10.1.9",
+    "cors": "^2.8.5",
     "reflect-metadata": "^0.1.13",
     "rxjs": "~6.5.5",
     "surge": "^0.21.7",
