@@ -23,5 +23,5 @@ jobs:
           branch: 'main'
           workflow_id: 'deploy.yml'
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          - run: npm run nx affected -- --target=build --base=${{ steps.last_successful_commit.outputs.commit_hash }} --parallel --configuration=production
-          - run: npm run nx affected -- --target=deploy --base=${{ steps.last_successful_commit.outputs.commit_hash }} --parallel
+      - run: npm run nx affected -- --target=build --base=${{ steps.last_successful_commit.outputs.commit_hash }} --parallel --configuration=production
+      - run: npm run nx affected -- --target=deploy --base=${{ steps.last_successful_commit.outputs.commit_hash }} --parallel
